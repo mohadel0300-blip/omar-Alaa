@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAB Magnetic Lashes</title>
+  <meta name="description" content="رموش TAB المغناطيسية لإطلالة يومية مرتبة بدون غراء." />
+  <style>
+    :root{
+      --ink:#201725;
+      --muted:#736676;
+      --paper:#ffffff;
+      --line:rgba(32,23,37,.10);
+      --lavender:#d8c8ff;
+      --rose:#f6d8e9;
+      --cream:#fbf6f1;
+      --deep:#241528;
+      --accent:#7b5a93;
+      --accent-dark:#4a2e5c;
+      --container:min(1180px,calc(100% - 40px));
+      --radius:28px;
+      --shadow:0 20px 60px rgba(47,32,57,.10);
+      --shadow-soft:0 10px 30px rgba(47,32,57,.07);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Cairo","Tajawal","DIN Next Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+    .container{width:var(--container);margin-inline:auto}
+    .brand-logo{width:84px;color:var(--accent);display:block}
+
+    .topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+    .nav{height:72px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px}
+    .links{display:flex;justify-content:center;align-items:center;gap:26px;font-size:14px;font-weight:800;color:#4e4157}
+    .links a{opacity:.85}.links a:hover{opacity:1;color:var(--accent)}
+    .menu-wrap{position:relative;padding:24px 0}.drop-trigger{display:flex;align-items:center;gap:5px}.drop{position:absolute;top:61px;right:0;width:220px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-soft);padding:8px;display:none}.menu-wrap:hover .drop{display:block}.drop a{display:block;padding:11px 12px;border-radius:12px;font-size:13px}.drop a:hover{background:#faf5fb}
+    .actions{display:flex;align-items:center;gap:10px}.icon{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--accent)}.icon svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.cart{position:relative}.cart span{position:absolute;top:-4px;left:-4px;width:18px;height:18px;border-radius:50%;background:var(--deep);color:#fff;font-size:11px;display:grid;place-items:center;font-weight:900}
+
+    .hero{background:var(--lavender);min-height:620px;display:flex;align-items:center;overflow:hidden}.hero-grid{display:grid;grid-template-columns:.82fr 1.18fr;align-items:center;gap:42px}.hero-copy{max-width:430px}.eyebrow{display:inline-flex;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:900;color:var(--accent-dark);margin-bottom:18px}.hero h1{margin:0;font-size:clamp(42px,6.8vw,88px);line-height:.97;letter-spacing:-.065em;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.02)}.hero p{margin:18px 0 26px;font-size:clamp(17px,1.7vw,23px);line-height:1.7;font-weight:850;color:#3d2b48;max-width:19ch}.cta-row{display:flex;gap:12px;flex-wrap:wrap}.btn{height:50px;padding:0 24px;border-radius:999px;border:0;display:inline-flex;align-items:center;justify-content:center;font-weight:950;white-space:nowrap}.btn-primary{background:var(--deep);color:#fff}.btn-light{background:#fff;color:var(--accent-dark);border:1px solid rgba(255,255,255,.8)}.hero-visual{position:relative;min-height:480px;display:flex;align-items:center;justify-content:center}.hero-card{width:min(620px,100%);background:#fff;border-radius:42px;padding:26px;box-shadow:var(--shadow);transform:rotate(-2deg)}.hero-card img{width:100%;aspect-ratio:1.15/1;object-fit:contain;background:#fff;border-radius:32px}.hero-note{position:absolute;bottom:36px;right:10px;background:#fff;border-radius:22px;padding:14px 18px;box-shadow:var(--shadow-soft);font-weight:950;color:var(--accent-dark)}
+
+    .feature-strip{background:#fff;border-bottom:1px solid var(--line)}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.feature{padding:24px 18px;text-align:center;border-inline-start:1px solid var(--line)}.feature:first-child{border-inline-start:0}.feature strong{display:block;font-size:18px;margin-bottom:5px}.feature span{font-size:13px;color:var(--muted);font-weight:750}
+
+    section{padding:74px 0}.head{text-align:center;max-width:650px;margin:0 auto 34px}.head small{display:block;color:var(--accent);font-size:13px;font-weight:950;margin-bottom:8px}.head h2{margin:0;font-size:clamp(32px,4.2vw,56px);line-height:1.08;letter-spacing:-.045em}.head p{margin:12px auto 0;line-height:1.75;color:var(--muted);font-weight:780;font-size:16px;max-width:45ch}
+
+    .products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow-soft);transition:.22s ease}.product:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.product-img{background:#fff;padding:20px}.product-img img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff}.product-info{padding:0 18px 18px}.product-info h3{margin:0 0 6px;font-size:19px}.product-info p{margin:0 0 14px;color:var(--muted);font-size:13px;font-weight:750;line-height:1.55}.price-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.price{font-weight:950;color:var(--deep)}.mini-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;font-size:13px;font-weight:900;color:var(--accent-dark)}
+
+    .solid-banner{background:var(--rose);border-radius:36px;min-height:280px;display:grid;grid-template-columns:1fr .9fr;align-items:center;overflow:hidden;box-shadow:var(--shadow-soft);border:1px solid rgba(255,255,255,.55)}.solid-copy{padding:46px}.solid-copy h2{margin:0 0 12px;font-size:clamp(32px,4.7vw,64px);line-height:1.02;letter-spacing:-.05em;color:#fff}.solid-copy p{margin:0 0 22px;color:#523d55;font-size:18px;font-weight:850;line-height:1.7;max-width:27ch}.solid-img{height:100%;display:flex;align-items:center;justify-content:center;padding:18px}.solid-img img{width:min(390px,100%);aspect-ratio:1/1;object-fit:contain;background:#fff;border-radius:36px;box-shadow:0 18px 50px rgba(47,32,57,.10)}
+
+    .faq-wrap{max-width:850px;margin-inline:auto;display:grid;gap:12px}.faq-item{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 10px 26px rgba(47,32,57,.05)}.faq-q{width:100%;border:0;background:#fff;padding:19px 22px;display:flex;align-items:center;justify-content:space-between;text-align:right;font-weight:950;color:var(--ink);cursor:pointer}.faq-q span{font-size:24px;line-height:1;color:var(--accent)}.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}.faq-a div{padding:0 22px 20px;color:var(--muted);line-height:1.8;font-weight:760}.faq-item.open .faq-a{max-height:190px}.faq-item.open .faq-q span{transform:rotate(45deg)}
+
+    .reviews{display:grid;grid-template-columns:1.2fr repeat(2,1fr);gap:18px}.review{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--shadow-soft)}.review.big{background:var(--deep);color:#fff}.stars{color:#d9a650;letter-spacing:2px;margin-bottom:14px}.review p{margin:0;color:inherit;line-height:1.8;font-weight:760}.review cite{display:block;margin-top:18px;font-style:normal;font-weight:950;color:inherit}.review:not(.big) p{color:#5c5261}.review:not(.big) cite{color:var(--ink)}
+
+    footer{background:var(--deep);color:#fff;padding:42px 0 22px}.footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:26px}.brand-logo.white{color:#fff}.footer-grid p{color:rgba(255,255,255,.68);line-height:1.8;font-weight:760}.footer-grid h4{margin:0 0 12px}.footer-grid a{display:block;color:rgba(255,255,255,.64);font-size:14px;margin:8px 0;font-weight:760}.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:24px;padding-top:18px;text-align:center;color:rgba(255,255,255,.5);font-size:13px}
+
+    @media(max-width:980px){.hero{min-height:auto;padding:64px 0}.hero-grid,.solid-banner{grid-template-columns:1fr}.hero-copy{text-align:center;margin:auto}.cta-row{justify-content:center}.hero-card{transform:none}.hero-note{right:50%;transform:translateX(50%)}.products{grid-template-columns:repeat(2,1fr)}.reviews{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.links{display:none}.features{grid-template-columns:1fr}.feature{border-inline-start:0;border-bottom:1px solid var(--line)}.feature:last-child{border-bottom:0}}
+    @media(max-width:620px){:root{--container:calc(100% - 26px)}.nav{height:66px}.brand-logo{width:72px}.hero h1{font-size:47px}.hero p{margin-inline:auto}.hero-card{border-radius:30px;padding:14px}.hero-card img,.solid-img img{border-radius:24px}.products{grid-template-columns:1fr}.solid-copy{padding:32px 24px;text-align:center}.solid-copy p{margin-inline:auto}.footer-grid{grid-template-columns:1fr}section{padding:54px 0}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#" aria-label="TAB home"><img class="brand-logo" src="assets/logo/tab-logo.svg" alt="TAB"></a>
+      <nav class="links" aria-label="التنقل الرئيسي">
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#reviews">آراء العملاء</a>
+        <span class="menu-wrap"><a class="drop-trigger" href="#faq">الأسئلة الشائعة ▾</a><span class="drop"><a href="#faq">المميزات</a><a href="#faq">طريقة الاستخدام</a><a href="#faq">من نحن</a></span></span>
+      </nav>
+      <div class="actions">
+        <button class="icon" aria-label="بحث"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg></button>
+        <button class="icon cart" aria-label="السلة"><svg viewBox="0 0 24 24"><path d="M7 8h10l1 12H6L7 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span>0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">TAB Magnetic Lashes</span>
+          <h1>رموش مرتبة<br>بدون غراء</h1>
+          <p>إطلالة يومية خفيفة، تثبيت مغناطيسي، وتركيب أسهل.</p>
+          <div class="cta-row"><a class="btn btn-primary" href="#products">تسوقي الآن</a><a class="btn btn-light" href="#faq">اعرفي أكثر</a></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card"><img src="assets/images/white-lavender-eyelash-case-with-mirror-reflection.png" alt="TAB magnetic lashes"></div>
+          <div class="hero-note">خفيفة للاستخدام اليومي</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="feature-strip">
+      <div class="container features">
+        <div class="feature"><strong>بدون غراء</strong><span>تثبيت مغناطيسي نظيف</span></div>
+        <div class="feature"><strong>تطبيق سريع</strong><span>مناسبة للروتين اليومي</span></div>
+        <div class="feature"><strong>قابلة لإعادة الاستخدام</strong><span>احفظيها بعد كل إطلالة</span></div>
+      </div>
+    </div>
+
+    <section id="products">
+      <div class="container">
+        <div class="head"><small>المنتجات</small><h2>اختاري الرمش المناسب</h2><p>عرض بسيط يركز على شكل الرموش والإطلالة، بتفاصيل مختصرة داخل الصفحة الرئيسية.</p></div>
+        <div class="products">
+          <article class="product"><div class="product-img"><img src="assets/images/white-minimalist-eyelash-case-with-mirror-reflection.png" alt="Natural magnetic lashes"></div><div class="product-info"><h3>Natural Look</h3><p>رموش ناعمة لإطلالة يومية.</p><div class="price-row"><span class="price">تفاصيل المنتج</span><button class="mini-btn">عرض المنتج</button></div></div></article>
+          <article class="product"><div class="product-img"><img src="assets/images/white-pink-eyelash-case-with-mirror-and-lashes.png" alt="Classic magnetic lashes"></div><div class="product-info"><h3>Classic Lift</h3><p>رفعة واضحة بدون مبالغة.</p><div class="price-row"><span class="price">تفاصيل المنتج</span><button class="mini-btn">عرض المنتج</button></div></div></article>
+          <article class="product"><div class="product-img"><img src="assets/images/white-peach-lash-case-with-dramatic-lashes.png" alt="Volume magnetic lashes"></div><div class="product-info"><h3>Soft Volume</h3><p>كثافة خفيفة للمناسبات.</p><div class="price-row"><span class="price">تفاصيل المنتج</span><button class="mini-btn">عرض المنتج</button></div></div></article>
+          <article class="product"><div class="product-img"><img src="assets/images/white-sleek-black-lash-case-with-mirror.png" alt="Glam magnetic lashes"></div><div class="product-info"><h3>Evening Glam</h3><p>تأثير أوضح لإطلالة مسائية.</p><div class="price-row"><span class="price">تفاصيل المنتج</span><button class="mini-btn">عرض المنتج</button></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container solid-banner">
+        <div class="solid-copy"><h2>جمال أبسط<br>كل يوم</h2><p>منتج واحد، نتيجة واضحة، وتجربة استخدام خفيفة.</p><a class="btn btn-primary" href="#products">تصفحي المنتجات</a></div>
+        <div class="solid-img"><img src="assets/images/white-pastel-eyelash-case-with-dramatic-lashes.png" alt="TAB lashes"></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="head"><small>معلومات سريعة</small><h2>الأسئلة الشائعة</h2><p>التفاصيل المهمة موجودة هنا بدل تكرارها في كل الصفحة.</p></div>
+        <div class="faq-wrap">
+          <div class="faq-item open"><button class="faq-q">ما أهم مميزات رموش TAB؟ <span>+</span></button><div class="faq-a"><div>رموش مغناطيسية بدون غراء، سهلة التركيب، وقابلة لإعادة الاستخدام مع حفظها بشكل مرتب بعد كل استخدام.</div></div></div>
+          <div class="faq-item"><button class="faq-q">كيف أستخدمها؟ <span>+</span></button><div class="faq-a"><div>اختاري الموديل المناسب، ثبتي الرموش بالأداة المرفقة، وبعد الاستخدام أعيديها إلى مكانها للحفاظ عليها.</div></div></div>
+          <div class="faq-item"><button class="faq-q">من نحن؟ <span>+</span></button><div class="faq-a"><div>TAB علامة جمال تركّز على تسهيل روتين الرموش اليومي بمنتجات مرتبة، أنيقة، وعملية.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="head"><small>تجارب العملاء</small><h2>ثقة من أول استخدام</h2></div>
+        <div class="reviews">
+          <article class="review big"><div class="stars">★★★★★</div><p>“أسهل من الرموش التقليدية، وما احتجت غراء.”</p><cite>لينا</cite></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“خفيفة ومناسبة للدوام.”</p><cite>ريم</cite></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“شكلها مرتب وتثبت بسرعة.”</p><cite>نورة</cite></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><img class="brand-logo white" src="assets/logo/tab-logo-white.svg" alt="TAB"><p>جمال أبسط بتجربة يومية مرتبة.</p></div>
+        <div><h4>المتجر</h4><a href="#products">المنتجات</a><a href="#reviews">آراء العملاء</a></div>
+        <div><h4>المساعدة</h4><a href="#faq">الأسئلة الشائعة</a><a href="#faq">طريقة الاستخدام</a></div>
+        <div><h4>تابعينا</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Snapchat</a></div>
+      </div>
+      <div class="copy">© TAB Magnetic Lashes</div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-q').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        btn.closest('.faq-item').classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
